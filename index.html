@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeAlpha Frontend Projects - Tannistha Pal</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #74ABE2, #5563DE);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .projects {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 15px;
+      padding: 30px;
+      text-align: center;
+      width: 260px;
+      backdrop-filter: blur(8px);
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      background: rgba(255, 255, 255, 0.25);
+    }
+    .card h2 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+    .card a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #fff;
+      color: #333;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .card a:hover {
+      background: #333;
+      color: #fff;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <h1>CodeAlpha Frontend Projects<br>by <span style="color: #ffd700;">Tannistha Pal</span></h1>
+  <div class="projects">
+    <div class="card">
+      <h2>🖼️ Image Gallery</h2>
+      <p>Responsive photo gallery using HTML, CSS, and JavaScript.</p>
+      <a href="./ImageGallery/index.html" target="_blank">View Project</a>
+    </div>
+    <div class="card">
+      <h2>🧮 Calculator</h2>
+      <p>Simple yet elegant calculator built with JavaScript.</p>
+      <a href="./Calculator/index.html" target="_blank">View Project</a>
+    </div>
+    <div class="card">
+      <h2>🎵 Music Player</h2>
+      <p>Interactive music player with progress and playlist features.</p>
+      <a href="./MusicPlayer/index.html" target="_blank">View Project</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 CodeAlpha Internship | Designed by Tannistha Pal</p>
+  </footer>
+</body>
+</html>

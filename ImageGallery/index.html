@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Visual Gallery</h1>
+      <p class="subtitle">A curated collection of stunning photography from around the world</p>
+    </header>
+
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="nature">Nature</button>
+      <button class="filter-btn" data-filter="architecture">Architecture</button>
+      <button class="filter-btn" data-filter="people">People</button>
+      <button class="filter-btn" data-filter="urban">Urban</button>
+    </div>
+
+    <div class="gallery">
+      <!-- Nature Images -->
+      <div class="gallery-item" data-category="nature">
+        <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=1200&q=80" alt="Mountain Landscape">
+        <div class="image-caption">Mountain Landscape</div>
+      </div>
+      <div class="gallery-item" data-category="nature">
+        <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80" alt="Forest Mist">
+        <div class="image-caption">Forest Mist</div>
+      </div>
+      <div class="gallery-item" data-category="nature">
+        <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&fit=crop&w=1200&q=80" alt="Lake Reflection">
+        <div class="image-caption">Lake Reflection</div>
+      </div>
+
+      <!-- Architecture Images -->
+      <div class="gallery-item" data-category="architecture">
+        <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1200&q=80" alt="Modern Building">
+        <div class="image-caption">Modern Building</div>
+      </div>
+      <div class="gallery-item" data-category="architecture">
+        <img src="https://images.unsplash.com/photo-1513584684374-8bab748fbf90?auto=format&fit=crop&w=1200&q=80" alt="Historic Architecture">
+        <div class="image-caption">Historic Architecture</div>
+      </div>
+      <div class="gallery-item" data-category="architecture">
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80" alt="Skyscraper">
+        <div class="image-caption">Skyscraper</div>
+      </div>
+
+      <!-- People Images -->
+      <div class="gallery-item" data-category="people">
+        <img src="https://plus.unsplash.com/premium_photo-1682096252599-e8536cd97d2b?fm=jpg&q=60&w=3000" alt="Portrait">
+        <div class="image-caption">Portrait</div>
+      </div>
+      <div class="gallery-item" data-category="people">
+        <img src="https://t4.ftcdn.net/jpg/03/54/43/57/360_F_354435799_7pxwyGmLhDL4zixqaFDjxm6Q2PnZizYf.jpg" alt="Smiling Woman">
+        <div class="image-caption">Smiling Woman</div>
+      </div>
+      <div class="gallery-item" data-category="people">
+        <img src="https://images.unsplash.com/photo-1507591064344-4c6ce005b128?auto=format&fit=crop&w=1200&q=80" alt="Street Portrait">
+        <div class="image-caption">Street Portrait</div>
+      </div>
+
+      <!-- Urban Images -->
+      <div class="gallery-item" data-category="urban">
+        <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=1200&q=80" alt="City Lights">
+        <div class="image-caption">City Lights</div>
+      </div>
+      <div class="gallery-item" data-category="urban">
+        <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1200&q=80" alt="Cityscape">
+        <div class="image-caption">Cityscape</div>
+      </div>
+      <div class="gallery-item" data-category="urban">
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80" alt="Urban Architecture">
+        <div class="image-caption">Urban Architecture</div>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+      <button class="lightbox-close">&times;</button>
+      <div class="lightbox-content">
+        <img class="lightbox-img" src="" alt="">
+        <div class="lightbox-caption"></div>
+      </div>
+      <div class="lightbox-nav">
+        <button class="lightbox-btn prev-btn">&lt;</button>
+        <button class="lightbox-btn next-btn">&gt;</button>
+      </div>
+    </div>
+
+    <footer>
+      <p>Responsive Image Gallery &copy; 2025 | Created with HTML, CSS & JavaScript</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
